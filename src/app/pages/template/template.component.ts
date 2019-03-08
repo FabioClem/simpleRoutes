@@ -6,8 +6,6 @@ import { LoginComponent } from '../login/login.component';
 
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
-import { switchMap } from 'rxjs/operators';
-import { Observable } from 'rxjs';
 import { ComponenteService } from 'src/app/directives/component.service';
 
 const styles = ({
@@ -54,7 +52,7 @@ export class TemplateComponent implements OnInit {
 				this.componenteService.component = HomeComponent;
 				break;
 			default:
-				this.componenteService.component = LoginComponent;
+				this.componenteService.component = LoginComponent; // Login usado como exemplo
 				break;
 		}
 	}
