@@ -1,6 +1,6 @@
 <ly-grid container [spacing]="16">
-	<ly-grid item col *ngFor="let i of infos">
-		<ly-card style="max-width: 320px">
+	<ly-grid item [col]="3" *ngFor="let i of infos">
+		<ly-card class="c-width-100">
 			<ly-card-media
 				bgImg="https://firebasestorage.googleapis.com/v0/b/alyle-ui.appspot.com/o/img%2FMountains-Blue.jpg?alt=media&token=d04f0279-79c6-4752-8b5a-cccd73720243"
 				title="Mountains blue"></ly-card-media>
