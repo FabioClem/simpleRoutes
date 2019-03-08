@@ -22,6 +22,10 @@ import { LyTypographyModule } from '@alyle/ui/typography';
 import { LyButtonModule } from '@alyle/ui/button';
 import { LyBadgeModule } from '@alyle/ui/badge';
 import { LyIconModule } from '@alyle/ui/icon';
+import { LyGridModule } from '@alyle/ui/grid';
+import { LyCardModule } from '@alyle/ui/card';
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { TemplateComponent } from './pages/template/template.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -49,7 +53,10 @@ import { ComponenteService } from './directives/component.service';
 		LyTypographyModule,
 		LyButtonModule,
 		LyBadgeModule,
-		LyIconModule
+		LyIconModule,
+		LyGridModule,
+		LyCommonModule,
+		LyCardModule
 	],
 	providers: [
 		{ provide: LY_THEME, useClass: MinimaLight, multi: true }, // name: `minima-light`
